@@ -12,9 +12,27 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
 }
 
-.card-remove-link {
+.card-link-delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.card-link-add {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.card-link {
   color: white;
   border-radius: 50%;
   border: 1px solid white;
@@ -23,9 +41,6 @@
   align-items: center;
   height: 30px;
   width: 30px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
   opacity: 0.8;
   font-weight: lighter;
   text-decoration: none;

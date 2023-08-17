@@ -1,6 +1,3 @@
-puts "Deleting all tags..."
-Tag.destroy_all if Rails.env.development?
-
 puts "Deleting all plants and gardens..."
 Garden.destroy_all if Rails.env.development?
 
@@ -32,9 +29,11 @@ Plant.create!(
 )
 puts "#{Plant.count} gardens created."
 
-names = ['fruit tree', 'cactus', 'greasy plant', 'flower', 'fern', 'conifer']
+puts "Create Tags..."
+names = ['cactus', 'bonsai', 'tree', 'bush', 'flower', 'fern']
 
 names.each do |name|
   Tag.create!(name: name)
 end
-puts "#{Tag.count} tags created."
+
+puts "#{Tag.count} tags have been created."

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_17_084254) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_17_150149) do
   create_table "gardens", force: :cascade do |t|
     t.string "name"
     t.string "banner_url"
